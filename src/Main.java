@@ -11,14 +11,14 @@ public class Main {
 
         // Задача 2
 
-        int max = 99999;
+        int max = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i];
             }
         }
             System.out.println("Максимальная сумма трат за день составила " + max + " рублей");
-        int min = 200001;
+        int min = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < min) {
                 min = arr [i];
@@ -27,13 +27,12 @@ public class Main {
         System.out.println("Минимальнвя сумма трат за день составила " + min + " рублей");
 
         // Задача 3
-        int days = 30;
-        double average = sum / days;
+        double average = sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
 
         // Задача 4
         char [] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int j = 10; j >= 0; j--) {
+        for (int j = reverseFullName.length - 1; j >= 0; j--) {
             System.out.print(reverseFullName[j]);
         }
 
